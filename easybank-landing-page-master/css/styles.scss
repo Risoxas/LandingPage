@@ -14,13 +14,13 @@ $white: hsl(0, 0%, 100%);
 
 *{
   font-family: 'Public Sans';
-  font-size: 18px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
   background: transparent url("../images/bg-intro-mobile.svg") right top/contain no-repeat;
+  font-size: 18px;
   .btn{
     margin: $base-measure;
     border-radius: 1.5em;
@@ -32,9 +32,9 @@ body{
 }
 .navbar {
     display: flex;
-    padding-top: 10px;
     background-color: $white;
     margin-bottom: 2rem;
+    height: 5vh;
     .nav-logo {
       display: flex;
       align-items: center;
@@ -66,7 +66,7 @@ body{
           font-weight: 700;
           text-align: center;
         }
-        p {
+        span {
           color:$grayish-blue;
         }
     }
@@ -103,7 +103,7 @@ body{
       font-weight: 700;
       margin-bottom: $base-measure;
     }
-    p{
+    li{
       word-wrap: normal;
       text-align: center;
       color:$grayish-blue;
@@ -197,35 +197,34 @@ body{
   }
 
 @media only screen and (min-width: 1024px){
-
-
-  .nav-link {
-    display: flex;
-    justify-content: space-between;
-    p {
+body{
+  #hbtn{
+    margin: auto;
+  }
+  .navbar{
+    .nav-link {
       display: flex;
-      color: $grayish-blue;
-     }
-     
-   }
-   .nav-button {
-    display: flex;
-    margin-left: auto;
-    background-color: $lime-green;
-    padding: 0.1rem 2.1rem;
-    border-radius: 8px;
-    height: 2.5rem;
-    margin-top: .5rem;
-    cursor: pointer;
-    border-radius: 24px;
-      a {
-       text-decoration: none;
-       color:$white;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      ul{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       li{
+         color: $grayish-blue;
+         list-style: none;
+        }
       }
-    } 
+    }
+  }
   .card-wrapper {
     display: flex;
     flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 10vw;
     .individual{
       display: flex;
       justify-content: left;
@@ -235,7 +234,6 @@ body{
         width: 50%;
         word-wrap: normal;
         padding: 0;
-        
         h1{
           margin-top: $base-measure*3;
           color: $dark-blue;
@@ -258,7 +256,45 @@ body{
         text-align: start;
       }
     }
-  }  
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    background-color: $very-light-gray;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    .heading{
+      display: flex;
+      width: 90%;
+      margin: auto;
+      padding-bottom: $base-measure;
+    }
+    .row{
+      flex-direction: row;
+      justify-content: space-around;
+      .card{
+        align-items: baseline;
+        width: 20%;
+        word-wrap: normal;
+        padding: 0;
+        .cardbody{
+          p{
+            text-align: justify;
+            .author{
+              font-size: .1$font-size;
+              margin-right: auto;
+              color: $light-grayish;
+              width: 80%;
+            }
+            
+          .title{
+            color: $grayish-blue;
+          }
+          }
+        }
+      } 
+    }
+  }    
   footer{
     flex-direction: row;
     justify-content: space-around;
@@ -269,3 +305,5 @@ body{
     }
   }
 }
+}
+

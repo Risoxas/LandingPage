@@ -19,15 +19,16 @@
       <img src="images/logo.svg" alt="" />
     </div>
     <div class="nav-link">
-      <p>Home</p>
-      <p>About</p>
-      <p>Contact</p>
-      <p>Blog</p>
-      <p>Careers</p>
+      <ul class="flex-row">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+        <li>Careers</li>
+    </ul>
     </div>
-    <div class="nav-button">
-      <p><a href="">Request Invite</a></p>
-    </div>
+    <button type="button" class="btn" id="hbtn"> Request Invite </button>
+
   </nav>
   <section class="section1">
     <div class="second-container">
@@ -88,10 +89,10 @@
       <div class="card">
         <div class="card-body">
           <img src="./images/image-currency.jpg" alt="" class="fit-image">
-          <h2>Lorem ipsum dolor sit amet</h2><br>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3><br>
+          <p class="author">By Claire Robinson</p><br>
+          <p class="title">Receive money in any currency with no fees</p><br>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+            The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …
           </p>
          
         </div>
@@ -99,8 +100,8 @@
       <div class="card">
         <div class="card-body">
           <img src="./images/image-restaurant.jpg" alt="" class="fit-image">
-          <h2>Lorem ipsum dolor sit amet</h2><br>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3><br>
+          <p>By Wilson Hutton</p><br>
+          <p>Treat yourself without worrying about money </p><br>
           <p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
@@ -111,9 +112,9 @@
       <div class="card">
         <div class="card-body">
           <img src="./images/image-plane.jpg" alt="" class="fit-image">
-          <h2>Lorem ipsum dolor sit amet</h2><br>
+          <p>By Wilson Hutton</p><br>
           
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3><br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
           <p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
@@ -124,8 +125,8 @@
       <div class="card">
         <div class="card-body">
           <img src="./images/image-confetti.jpg" alt="" class="fit-image">
-          <h2>Lorem ipsum dolor sit amet</h2></br>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3></br>
+          <p>By Claire Robinson</p></br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></br>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
           </p>
@@ -171,11 +172,7 @@
 </div>
 </html>
 
-<!--     Latest Articles By Claire Robinson Receive
-    money in any currency with no fees The world is getting smaller and we’re
-    becoming more mobile. So why should you be forced to only receive money in a
-    single … By Wilson Hutton Treat yourself without worrying about money Our
-    simple budgeting feature allows you to separate out your spending and set
+<!-- Our simple budgeting feature allows you to separate out your spending and set
     realistic limits each month. That means you … By Wilson Hutton Take your
     Easybank card wherever you go We want you to enjoy your travels. This is why
     we don’t charge any fees on purchases while you’re abroad. We’ll even show
