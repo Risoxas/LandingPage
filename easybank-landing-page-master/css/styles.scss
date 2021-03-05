@@ -48,7 +48,7 @@ $white: hsl(0, 0%, 100%);
    border-radius: 24px;
      a {
       text-decoration: none;
-      color: white;
+      color:$white;
      }
    }
    .card-wrapper{
@@ -80,11 +80,53 @@ $white: hsl(0, 0%, 100%);
     }
 
   }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo{
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(301deg) brightness(108%) contrast(109%);
+      margin: $base-measure;
+    }
+    .social{
+      justify-content: space-around;
+      width: 35%;
+      display: flex;
+      margin: $base-measure;
+    }
+    .information ul{
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      color: $light-grayish;
+      text-align: center;
+      li{
+        margin-bottom: $base-measure;
+      }
+      &:first-child{
+        margin-top: $base-measure;
+      }
+    }
+    .btn{
+      margin-bottom: $base-measure;
+      border-radius: 1.5em;
+      width: 180px;
+      height: 40px;
+      background-image: linear-gradient(315deg,$lime-green,$bright-cyan);
+    }
+    span{
+      color:$grayish-blue;
+      margin-bottom: $base-measure;
+    }
+  }
    .bg-light-grayish{
      background-color: $light-grayish;
    }
    .bg-vlg{
      background-color: $very-light-gray;
+   }
+   .bg-dark-blue{
+     background-color: $dark-blue;
    }
 @media only screen and (min-width: 1024px){
   body{
