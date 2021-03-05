@@ -31,8 +31,6 @@ body {
 
 .round {
   border-radius: 5px;
-  border-color: transparent;
-  border-width: 0 solid;
 }
 
 .disp-flex {
@@ -84,6 +82,8 @@ body {
 .header .botones .fa-search {
   -webkit-transform: scale(1.7);
           transform: scale(1.7);
+  border-color: transparent;
+  border: 0 solid;
 }
 
 .header .botones button {
@@ -131,19 +131,25 @@ footer {
 }
 
 footer .container {
-  width: 100%;
-  margin: 0;
+  width: 60%;
+  margin: 0 auto;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .container nav {
   display: block;
   padding: 1rem;
   padding-bottom: 2rem;
+  word-wrap: normal;
 }
 
 footer .container nav span {
   display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 footer .container nav .social {
@@ -172,5 +178,45 @@ footer .container p {
 footer b {
   color: black;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 760px) {
+  .hamburguer {
+    display: none;
+  }
+  .botones {
+    margin-left: auto;
+  }
+  .botones i {
+    display: none;
+  }
+  .botones .logbtn {
+    background-color: transparent;
+    border: transparent;
+    color: #3b49df;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 1.5rem;
+  }
+  .botones .logbtn:hover {
+    background-color: #eef0f1;
+    border-radius: 5px;
+  }
+  .searchbar {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 auto;
+            flex: 1 auto;
+    margin: 0 1rem;
+  }
+  .searchbar input {
+    border: 1px solid #b5bdc4;
+    height: 2rem;
+  }
+  .searchbar input::-moz-selection {
+    border: 2px solid #3b49df;
+  }
+  .searchbar input::selection {
+    border: 2px solid #3b49df;
+  }
 }
 /*# sourceMappingURL=style.css.map */

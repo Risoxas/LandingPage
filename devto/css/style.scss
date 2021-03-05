@@ -33,9 +33,6 @@ body{
 }
 .round{
     border-radius: 5px;
-    border-color: transparent;
-    border-width: 0 solid;
-
 }
 .disp-flex{
     display: flex;
@@ -74,6 +71,8 @@ body{
         margin-right: $base-measure;
         .fa-search{
             transform: scale(1.7);
+            border-color: transparent;
+            border: 0 solid;
         }
         button{
             margin-left: $base-measure;
@@ -105,15 +104,19 @@ footer{
     position: relative;
     text-align: center;
     .container{
-        width: 100%;
-        margin: 0;
+        width: 60%;
+        margin: 0 auto;
         justify-items: center;
+        align-items: center;
         nav{
             display: block;
             padding: $base-measure;
             padding-bottom: $base-measure*2;
+            word-wrap: normal;
             span{
                 display: inline-block;
+                margin-right: $base-measure;
+                margin-bottom: $base-measure;
             }
             .social{
                 padding-top: $base-measure;
@@ -143,5 +146,37 @@ b{
 }
 
 @media only screen and (min-width: 760px){
-
+    .hamburguer{
+        display: none;
+    }
+    .botones{
+        margin-left: auto;
+        i{
+            display: none;
+        }
+        .logbtn{
+            background-color: transparent;
+            border: transparent;
+            color:#3b49df;
+            font-size: $font-size;
+            font-weight: $font-normal;
+            padding: $base-measure $base-measure*1.5;
+            &:hover{
+                background-color: #eef0f1;
+                border-radius: 5px;
+            }
+        }
+    }
+    .searchbar{
+        flex: 1 auto;
+        margin: 0 $base-measure;
+        input{
+            border: 1px solid #b5bdc4;
+            height: $base-measure*2;
+            &::selection{
+                border: 2px solid $button-bgcolor;
+            }
+            
+        }
+    }
 }
