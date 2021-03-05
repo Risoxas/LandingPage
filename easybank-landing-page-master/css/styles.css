@@ -3,17 +3,30 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: transparent url("../images/bg-intro-mobile.svg") right top/contain no-repeat;
+}
+
+body .btn {
+  margin: 1rem;
+  border-radius: 1.5em;
+  width: 180px;
+  height: 40px;
+  background-image: linear-gradient(315deg, #31d35c, #2bb7da);
+  color: white;
 }
 
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
   padding-top: 10px;
   background-color: white;
+  margin-bottom: 2rem;
 }
 
 .navbar .nav-logo {
@@ -25,38 +38,72 @@
           align-items: center;
 }
 
-.nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.navbar .nav-link {
+  display: none;
 }
 
-.nav-link p {
-  padding: 0.2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 4.5rem;
-  color: #9698a6;
+.navbar .nav-button {
+  display: none;
 }
 
-.nav-button {
+.section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section1 .first-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #31d35c;
-  padding: 0.1rem 2.1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  display: flex;
 }
 
-.nav-button a {
-  text-decoration: none;
-  color: white;
+.section1 .first-container h1 {
+  color: #2d314d;
+  font-size: 36px;
+  word-wrap: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section1 .first-container p {
+  color: #9698a6;
+}
+
+.section1 .second-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section1 .second-container .second-container-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-wrapper {
@@ -79,7 +126,9 @@
 }
 
 .card .first-h1 {
-  width: 25%;
+  font-size: 36px;
+  width: 50%;
+  word-wrap: normal;
 }
 
 .card h1 {
@@ -99,6 +148,53 @@
 
 .card img {
   margin-bottom: 1rem;
+}
+
+.container {
+  margin-top: 3rem;
+}
+
+.container .heading {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d314d;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.container .card {
+  background-color: #fafafa;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.container .card .card-body {
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.container .card .card-body .fit-image {
+  width: 80%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0;
 }
 
 footer {
@@ -127,7 +223,7 @@ footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 
 footer .information ul {
@@ -151,14 +247,6 @@ footer .information ul:first-child {
   margin-top: 1rem;
 }
 
-footer .btn {
-  margin-bottom: 1rem;
-  border-radius: 1.5em;
-  width: 180px;
-  height: 40px;
-  background-image: linear-gradient(315deg, #31d35c, #2bb7da);
-}
-
 footer span {
   color: #9698a6;
   margin-bottom: 1rem;
@@ -176,7 +264,55 @@ footer span {
   background-color: #2d314d;
 }
 
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media only screen and (min-width: 1024px) {
+  .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-link p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #9698a6;
+  }
+  .nav-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    background-color: #31d35c;
+    padding: 0.1rem 2.1rem;
+    border-radius: 8px;
+    height: 2.5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    border-radius: 24px;
+  }
+  .nav-button a {
+    text-decoration: none;
+    color: white;
+  }
   .card-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -226,6 +362,24 @@ footer span {
   }
   .card-wrapper .join p {
     text-align: start;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .personal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
