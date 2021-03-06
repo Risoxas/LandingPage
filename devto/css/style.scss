@@ -100,16 +100,34 @@ body {
 // Left Sidebar
 
 .sidebar-wrapper-left {
-  background-color: #3b49df;
   width: 19vw;
   .aside-nav {
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    justify-content: center;
+    a {
+      padding: 0.5rem;
+      text-decoration: none;
+    }
+    .icons-nav {
+      margin-right: 0.5rem;
+      vertical-align: middle;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+    }
     .social-media-leftsidebar {
       display: flex;
+      padding: 1rem;
+      margin-top: 1rem;
       justify-content: space-evenly;
-      background-color: red;
+      border-top-width: 1px;
+      img {
+        color: #4d5760;
+      }
     }
     .secondary-left-sidenavbar {
       width: 240px;

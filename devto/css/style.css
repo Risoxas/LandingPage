@@ -123,7 +123,6 @@ body {
 }
 
 .sidebar-wrapper-left {
-  background-color: #3b49df;
   width: 19vw;
 }
 
@@ -135,17 +134,47 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: grey;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar-wrapper-left .aside-nav a {
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.sidebar-wrapper-left .aside-nav .icons-nav {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25rem;
 }
 
 .sidebar-wrapper-left .aside-nav .social-media-leftsidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: red;
+  border-top-width: 1px;
+}
+
+.sidebar-wrapper-left .aside-nav .social-media-leftsidebar img {
+  color: #4d5760;
 }
 
 .sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar {
