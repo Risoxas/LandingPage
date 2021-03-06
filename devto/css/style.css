@@ -122,6 +122,57 @@ body {
   font-size: 1rem;
 }
 
+.sidebar-wrapper-left {
+  background-color: #3b49df;
+  width: 19vw;
+}
+
+.sidebar-wrapper-left .aside-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: grey;
+}
+
+.sidebar-wrapper-left .aside-nav .social-media-leftsidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: red;
+}
+
+.sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar {
+  width: 240px;
+  height: 186.195px;
+  margin-bottom: 24px;
+}
+
+.sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar .iconandtitle {
+  width: 232px;
+  height: 40px;
+  padding: 8px 0px 8px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar .iconandtitle img {
+  padding: 8px;
+}
+
 footer {
   padding: 20px;
   background-color: #d2d6db;
