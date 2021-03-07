@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+body {
+  font-family: sans-serif;
+  background-color: #eef0f1;
+}
+
 @font-face {
   font-family: "Myriad-Pro";
   src: url("../font/Myriad-Pro.ttf");
@@ -101,6 +106,11 @@ header .see-all, .S-Two-a .see-all, .S-Three-a .see-all, .S-Four-a .see-all {
   border-radius: 5px;
   font-size: 0.7rem;
   margin-top: 7px;
+}
+
+main {
+  padding: 16px;
+  margin: 0 116.9px;
 }
 
 .btn {
@@ -215,6 +225,138 @@ header .see-all, .S-Two-a .see-all, .S-Three-a .see-all, .S-Four-a .see-all {
   font-size: 1rem;
 }
 
+.Content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Content .sidebar-wrapper-left {
+  width: 19vw;
+  padding-left: 1rem;
+}
+
+.Content .sidebar-wrapper-left .aside-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Content .sidebar-wrapper-left .aside-nav a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #202428;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .icons-nav {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25rem;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .social-media-leftsidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  margin-top: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-top-width: 1px;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .social-media-leftsidebar img {
+  color: #4d5760;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar {
+  width: 240px;
+  height: 186.195px;
+  margin-bottom: 24px;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar .iconandtitle {
+  width: 232px;
+  height: 40px;
+  padding: 8px 0px 8px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar .iconandtitle h3 {
+  color: #202428;
+  font-weight: 700;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar .iconandtitle img {
+  padding: 8px;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 23vh;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar .tags .tag {
+  padding: 0.5rem;
+  text-overflow: ellipsis;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .aside-book {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .aside-book img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.Content .sidebar-wrapper-left .aside-nav .aside-book h3 {
+  color: #3b49df;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
 footer {
   padding: 20px;
   background-color: #d2d6db;
@@ -271,6 +413,12 @@ footer .container p {
 footer b {
   color: black;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-wrapper-left {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 760px) {
