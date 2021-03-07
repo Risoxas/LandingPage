@@ -15,6 +15,12 @@ $font-size: 1rem;
 }
 body {
   font-family: sans-serif;
+  background-color: #eef0f1;
+}
+
+main {
+  padding: 16px;
+  margin: 0 116.9px;
 }
 .btn {
   background-color: $button-bgcolor;
@@ -101,6 +107,7 @@ body {
 
 .sidebar-wrapper-left {
   width: 19vw;
+  padding-left: 1rem;
   .aside-nav {
     display: flex;
     flex-direction: column;
@@ -108,6 +115,7 @@ body {
     a {
       padding: 0.5rem;
       text-decoration: none;
+      color: #202428;
     }
     .icons-nav {
       margin-right: 0.5rem;
@@ -140,9 +148,43 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        h3 {
+          color: #202428;
+          font-weight: 700;
+        }
         img {
           padding: 8px;
         }
+      }
+      .tags {
+        display: flex;
+        flex-direction: column;
+        max-height: 23vh;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        overflow-y: auto;
+        box-sizing: border-box;
+        .tag {
+          padding: 0.5rem;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .aside-book {
+      box-sizing: border-box;
+      display: block;
+      margin-top: 25px;
+      text-align: center;
+      img {
+        width: 90%;
+        height: auto;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      h3 {
+        color: #3b49df;
+        font-size: 1.17em;
+        font-weight: bold;
       }
     }
   }
@@ -192,6 +234,12 @@ footer {
   b {
     color: black;
     font-weight: $font-bold;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-wrapper-left {
+    display: none;
   }
 }
 
