@@ -1,14 +1,19 @@
 * {
-  font-family: 'Public Sans';
+  font-family: "OpenSansRegular";
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../font/OpenSans-Regular.ttf");
+}
+
 body {
   background: transparent url("../images/bg-intro-mobile.svg") right top/contain no-repeat;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body .btn {
@@ -21,12 +26,16 @@ body .btn {
 }
 
 .navbar {
+  font-family: "OpenSansRegular";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: white;
   margin-bottom: 2rem;
-  height: 5vh;
+  height: 8vh;
 }
 
 .navbar .nav-logo {
@@ -40,6 +49,8 @@ body .btn {
 
 .navbar .nav-link {
   display: none;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .navbar .nav-button {

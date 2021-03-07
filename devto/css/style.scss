@@ -6,16 +6,120 @@ $font-bold: 700;
 $font-heavy: 800;
 $base-measure: 1rem;
 $font-size: 1rem;
+// Diana:INICIO:Var
+$font-size-bold: 1.2rem;
+$font-size-little: 0.9rem;
+// Diana:FINAL:Var
+
+
+
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    // font-size: $font-size;
+}
+
+
+// Diana:INICIO
+@font-face{
+    font-family: "Myriad-Pro";
+    src: url("../font/Myriad-Pro.ttf");
+}
+
+@font-face{
+    font-family: "Myriad-ProBold";
+    src: url("../font/Myriad Pro Bold SemiCondensed.otf");
+}
+
+@font-face{
+    font-family: "Myriad-Pro Light";
+    src: url("../font/Myriad Pro Light.otf");
+}
+
+#page-content{
+ display: grid;
+ grid-template-columns: 240px 650px 1fr;
+ margin-left: 260px;
+ margin-right: 260px;
+ padding: 16px;
+ gap: 1rem;
+ 
+ background-color: #eef0f1;
+}
+
+header, .S-Two-a, .S-Three-a, .S-Four-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9fafa;
+    border-bottom: 1px solid #eef0f1;
+    padding: 12px 16px;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    font-family: "Myriad-ProBold";
+    font-size: $font-size-bold;
+
+    .see-all{
+        color: #3b49df;
+        font-family: "Myriad-Pro Light";
+        font-size: $font-size-little;
+
+    }
+}
+
+.S-One-a, .S-One-b, .S-One-c,.S-One-d, .S-One-e, .create-listing, .S-Two-b, .S-Two-c, .S-Two-d, .S-Two-e, .S-Two-f, .S-Three-b, .S-Four-b, .S-Four-c, .S-Four-d, .S-Four-e, .S-Four-f {
+    padding: 16px;
+    background: #f9fafa;
+    border-bottom: 1px solid #eef0f1;
+    font-family: "Myriad-Pro";
     font-size: $font-size;
+    letter-spacing: 0.3px;
+    
+    &:hover{
+        background: white;
+        color: blue;
+        cursor: pointer;
+    }
 }
-body{
-    font-family: sans-serif;
+
+.create-listing{
+    text-align: center;
+    padding: 12px;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    margin-bottom: 4%;
 }
+
+.S-Two-f, .S-Three-b, .S-Four-f{
+    padding: 12px;
+    border-bottom-left-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    margin-bottom: 4%;
+}
+
+.small{
+    font-size: $font-size-little;
+    color: #95979a;
+    padding-top: 4px;
+}
+
+.blue-box{
+    display: inline-block;
+    color: white;
+    background-color:#323ebe;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    margin-top: 7px;
+}
+// Diana:FINAL
+
+// body{
+//     font-family: sans-serif;
+// }
+
 .btn{
     background-color: $button-bgcolor;
     color: $button-color;
@@ -79,6 +183,9 @@ body{
         }
     }
 }
+
+
+
 .Content{
     flex-direction: column;
     background-color: #eef0f1;

@@ -13,14 +13,21 @@ $very-light-gray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 
 *{
-  font-family: 'Public Sans';
+  font-family: "OpenSansRegular";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face{
+  font-family: "OpenSansRegular";
+  src: url("../font/OpenSans-Regular.ttf");
+
+}
+
 body{
   background: transparent url("../images/bg-intro-mobile.svg") right top/contain no-repeat;
-  font-size: 18px;
+  font-size: 16px;
   .btn{
     margin: $base-measure;
     border-radius: 1.5em;
@@ -31,16 +38,20 @@ body{
   }
 }
 .navbar {
+    font-family: "OpenSansRegular";
     display: flex;
+    justify-content: center;
     background-color: $white;
     margin-bottom: 2rem;
-    height: 5vh;
+    height: 8vh;
     .nav-logo {
       display: flex;
       align-items: center;
     }
     .nav-link{
       display: none;
+      margin-left: 0px;
+      margin-right: 0px;
     }
     .nav-button{
       display: none;
