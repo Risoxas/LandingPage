@@ -52,6 +52,10 @@ main {
 .space-between {
   justify-content: space-between;
 }
+.p-05{
+  padding: 0.5rem;
+}
+
 
 .header {
   background-color: white;
@@ -282,6 +286,10 @@ footer {
       }
     }
   }
+  .container-center{
+    height: auto;
+max-width: 100%;
+  }
 }
 
 .articles-body{
@@ -302,21 +310,19 @@ footer {
 }
 .main-body{
   margin-left: 10vw;
-  .container{
-    width: auto;
-    height: auto;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    .a-cover{
-      display: block;
-      width: 30vw;
-      height: 5vh;
-      padding-bottom: 42%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      background-size: cover;
-      background-position: center center;
-    }
+}
+.container-center{
+  width: auto;
+  height: auto;
+  .a-cover{
+    display: flex;
+    width: 30vw;
+    height: 5vh;
+    padding-bottom: 42%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
@@ -325,9 +331,9 @@ footer {
   height: auto;
   margin-left: 2vw;
   margin-right: 2vw;
+  border: 0.1px solid rgba(0, 0, 0, 0.192);
   background-color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   margin-bottom: 1rem;
   .container-header{
       width: auto;
@@ -337,6 +343,7 @@ footer {
       display: flex;
       height: auto;
       .container-img{
+        margin-top: 1rem;
       width: 2vw;
       height: 2vw;
       border-radius: 50%;
@@ -345,6 +352,7 @@ footer {
       .container-usr-name{
       width: auto;
       height: auto;
+      margin-top: 1rem;
       .c-font{
         color: rgb(41, 41, 41);
         font-size: smaller;
@@ -429,3 +437,4 @@ footer {
     font-size: small;
   }
 }
+

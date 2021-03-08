@@ -64,6 +64,10 @@ main {
           justify-content: space-between;
 }
 
+.p-05 {
+  padding: 0.5rem;
+}
+
 .header {
   background-color: white;
   position: fixed;
@@ -372,6 +376,10 @@ footer b {
   .searchbar input::selection {
     border: 2px solid #3b49df;
   }
+  .container-center {
+    height: auto;
+    max-width: 100%;
+  }
 }
 
 .articles-body {
@@ -396,15 +404,15 @@ footer b {
   margin-left: 10vw;
 }
 
-.main-body .container {
+.container-center {
   width: auto;
   height: auto;
-  margin-left: 2vw;
-  margin-right: 2vw;
 }
 
-.main-body .container .a-cover {
-  display: block;
+.container-center .a-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 30vw;
   height: 5vh;
   padding-bottom: 42%;
@@ -419,9 +427,9 @@ footer b {
   height: auto;
   margin-left: 2vw;
   margin-right: 2vw;
+  border: 0.1px solid rgba(0, 0, 0, 0.192);
   background-color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
@@ -439,6 +447,7 @@ footer b {
 }
 
 .container-gen .container-header .container-usuario .container-img {
+  margin-top: 1rem;
   width: 2vw;
   height: 2vw;
   border-radius: 50%;
@@ -447,6 +456,7 @@ footer b {
 .container-gen .container-header .container-usr-name {
   width: auto;
   height: auto;
+  margin-top: 1rem;
 }
 
 .container-gen .container-header .container-usr-name .c-font {
