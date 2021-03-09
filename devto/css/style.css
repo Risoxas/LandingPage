@@ -426,6 +426,9 @@ footer b {
   body #main-navbar {
     display: block;
     background-color: white;
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
   }
   body #main-navbar .header {
     width: 100%;
@@ -439,7 +442,7 @@ footer b {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    height: 56px;
+    height: 54px;
     padding: 1rem;
   }
   body #main-navbar .header .hamburguer {
