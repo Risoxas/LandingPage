@@ -258,11 +258,11 @@ main {
     }
   }
 }
-.Content {
+.Content-h {
   display: flex;
   flex-direction: column;
   background-color: #eef0f1;
-  padding: 0 10px;
+  padding: 54px 10px 0px;
   .cheader {
     display: flex;
     justify-content: space-between;
@@ -338,7 +338,7 @@ footer {
       display: block;
       background-color: white;
       .header {
-        width: 1280px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -411,6 +411,7 @@ footer {
     }
     main {
       margin: 0;
+      max-width: 100%;
       .sidebar-wrapper-left {
         display: block;
         margin-top: 56px;

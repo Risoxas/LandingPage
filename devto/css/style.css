@@ -315,7 +315,7 @@ main .save .sv-txt {
   display: none;
 }
 
-.Content {
+.Content-h {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,10 +324,10 @@ main .save .sv-txt {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #eef0f1;
-  padding: 0 10px;
+  padding: 54px 10px 0px;
 }
 
-.Content .cheader {
+.Content-h .cheader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +340,7 @@ main .save .sv-txt {
           align-items: center;
 }
 
-.Content .cheader select {
+.Content-h .cheader select {
   border: 1px solid #99a3ad;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -427,7 +427,7 @@ footer b {
     background-color: white;
   }
   body #main-navbar .header {
-    width: 1280px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -516,6 +516,7 @@ footer b {
   }
   body main {
     margin: 0;
+    max-width: 100%;
   }
   body main .sidebar-wrapper-left {
     display: block;
