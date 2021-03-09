@@ -360,10 +360,11 @@ footer {
   color: #4d5760;
   position: relative;
   text-align: center;
+  max-width: 100%;
 }
 
 footer .container {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   justify-items: center;
   -webkit-box-align: center;
