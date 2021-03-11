@@ -36,6 +36,7 @@ main .sidebar-wrapper-left {
 
 main .sidebar-wrapper-right {
   display: none;
+  width: 25%;
 }
 
 main .articles-body .Content {
@@ -62,8 +63,8 @@ main .container-center .a-cover {
 main .container-gen {
   width: auto;
   height: auto;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   border: 0.1px solid rgba(0, 0, 0, 0.192);
   background-color: white;
   border-radius: 10px;
@@ -84,12 +85,13 @@ main .container-gen .container-header .container-usuario {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 6vw;
 }
 
 main .container-gen .container-header .container-usuario .container-img {
   margin-top: 1rem;
   max-width: 100%;
-  height: auto;
+  height: 2.5vw;
   border-radius: 50%;
 }
 
@@ -190,11 +192,19 @@ main .save {
 
 main .save .btn-sv {
   background-color: #cac7c7;
-  margin-left: 1rem;
-  padding: 0.7rem;
-  border-radius: 0.5rem;
+  margin-left: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+  border-radius: 0.4rem;
   border: none;
   cursor: pointer;
+}
+
+main .save .tx-btn {
+  font-size: small;
+  color: black;
 }
 
 main .save .btn-sv:hover {
@@ -319,10 +329,10 @@ main .save .sv-txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-color: #eef0f1;
   padding: 54px 10px 0px;
 }
@@ -507,6 +517,11 @@ footer b {
     width: auto;
     height: auto;
   }
+  body .articles-body .tx-post {
+    margin-top: 0.6rem;
+    margin-left: 1rem;
+    width: 14rem;
+  }
   body .articles-body .tx-cont {
     text-decoration: none;
     color: #202428;
@@ -521,17 +536,20 @@ footer b {
   body main {
     margin: 0;
     max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   body main .sidebar-wrapper-left {
     display: block;
-    margin-top: 56px;
+    margin-top: 5rem;
   }
   body main .sidebar-wrapper-right {
     display: block;
-    margin-top: 56px;
+    margin-top: 5rem;
   }
   body main .articles-body .Content {
-    margin-top: 56px;
+    margin-top: 5rem;
     display: block;
   }
   body main .sidebar-wrapper-left {
@@ -546,9 +564,6 @@ footer b {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   body main .sidebar-wrapper-left .aside-nav a {
     padding: 0.5rem;
@@ -590,7 +605,7 @@ footer b {
     margin-bottom: 24px;
   }
   body main .sidebar-wrapper-left .aside-nav .secondary-left-sidenavbar .iconandtitle {
-    width: 232px;
+    width: 230px;
     height: 40px;
     padding: 8px 0px 8px 8px;
     display: -webkit-box;
@@ -693,7 +708,7 @@ footer b {
   body main .S-Four-d,
   body main .S-Four-e,
   body main .S-Four-f {
-    padding: 16px;
+    padding: 1rem;
     background: #f9fafa;
     border-bottom: 1px solid #eef0f1;
     font-family: "Myriad-Pro";
@@ -723,7 +738,7 @@ footer b {
   }
   body main .create-listing {
     text-align: center;
-    padding: 12px;
+    padding: 1rem;
     border-bottom-left-radius: 5px 5px;
     border-bottom-right-radius: 5px 5px;
     margin-bottom: 4%;
